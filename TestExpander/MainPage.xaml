@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="TestExpander.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:TestExpander"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkitControls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <toolkitControls:Expander
+            Margin="0"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Stretch"
+            Background="Black"
+            ExpandDirection="Down"
+            Foreground="White"
+            Header="Header"
+            IsExpanded="False">
+            <Grid Height="250">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="Content"
+                    TextWrapping="Wrap" />
+            </Grid>
+        </toolkitControls:Expander>
+    </Grid>
+
+</Page>
